@@ -1,0 +1,48 @@
+/*//----------------------------------------// UTILITIES //----------------------------------------//*/
+.container {
+  width: min(100%, var(--desktop));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-row-center-normal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-row-center-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-row-center-between {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+[data-spacer="x-10"] {
+  width: 10px;
+  display: block;
+}
+
+[data-spacer="y-10"] {
+  height: 10px;
+  display: block;
+}
+
+/*//----------------------------------------// MIXINS //----------------------------------------//*/
+@mixin side-padding {
+  padding-left: min(10vw, var(--side-padding));
+  padding-right: min(10vw, var(--side-padding));
+}
+
+@mixin breakpoint($min-width, $max-width) {
+  @media only screen and (min-width: $min-width) and (max-width: $max-width) {
+    @content
+  }
+}

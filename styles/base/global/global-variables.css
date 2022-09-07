@@ -1,0 +1,27 @@
+:root {
+  /*/ FONT /*/
+  --main-font: 'Kumbh Sans', sans-serif;
+
+  /*/ FONT SIZES /*/
+
+
+  /* // COLORS // */
+  --orange: hsl(26, 100%, 55%);
+  --pale-orange: hsl(25, 100%, 94%);
+  --very-dark-blue: hsl(220, 13%, 13%);
+  --dark-gray-blue: hsl(219, 9%, 45%);
+  --gray-blue: hsl(220, 14%, 75%);
+  --light-gray-blue: hsl(223, 64%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+
+  /* // SPACING // */
+  --side-padding: 200px;
+
+  /*/ TRANSITIONS /*/
+  --transition-03: all 0.3s ease;
+
+  /* // BREAKPOINTS // */
+  --mobile: 375px;
+  --desktop: 1440px;
+}

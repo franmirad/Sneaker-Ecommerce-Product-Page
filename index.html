@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sneakers</title>
+  <link rel="shortcut icon" href="assets/base/favicon-32x32.png" type="image/png">
+  <link rel="stylesheet" href="styles/styles.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container flex-row-center-between">
+      <div class="header-left">
+        <a href="#">
+          <img src="assets/base/logo.svg" alt="Sneakers Logo">
+        </a>
+        <nav data-component="header-nav">
+          <ul>
+            <li>
+              <a href="#collections">
+                Collections
+              </a>
+            </li>
+            <li>
+              <a href="#men">
+                Men
+              </a>
+            </li>
+            <li>
+              <a href="#women">
+                Women
+              </a>
+            </li>
+            <li>
+              <a href="#about">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#contact">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-right">
+        <button data-component="cart-button" data-total-items="0">
+          <img src="assets/icons/icon-cart.svg" alt="Cart">
+        </button>
+        <button data-component="menu-open-button">
+          <img src="assets/icons/icon-menu.svg" alt="Menu Open">
+        </button>
+        <button href="#profile" data-component="profile-button">
+          <img src="assets/images/image-avatar.png" alt="Avatar">
+        </button>
+        <div class="dark-overlay"></div>
+        <div data-component="sidenav">
+          <button data-component="menu-close-button">
+            <img src="assets/icons/icon-close.svg" alt="Menu Close">
+          </button>
+          <nav>
+            <ul>
+              <li>
+                <a href="#collections">
+                  Collections
+                </a>
+              </li>
+              <li>
+                <a href="#men">
+                  Men
+                </a>
+              </li>
+              <li>
+                <a href="#women">
+                  Women
+                </a>
+              </li>
+              <li>
+                <a href="#about">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#contact">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div data-component="cart">
+          <span class="title">
+            Cart
+          </span>
+          <div id="cart-items" class="cart-items">
+            <span class="empty-cart-label">
+              Your cart is empty
+            </span>
+            <button class="checkout-button">
+              Checkout
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container flex-row-center-center">
+      <div data-component="gallery">
+        <div class="swiper gallery-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/images/image-product-1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/image-product-2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/image-product-3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/image-product-4.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="swiper gallery-slider-thumbnails">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/images/image-product-1-thumbnail.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/image-product-2-thumbnail.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/image-product-3-thumbnail.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/image-product-4-thumbnail.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="lightbox">
+          <div class="lightbox-gallery">
+            <div class="swiper lightbox-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/images/image-product-1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/image-product-2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/image-product-3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/image-product-4.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="swiper lightbox-slider-thumbnails">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/images/image-product-1-thumbnail.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/image-product-2-thumbnail.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/image-product-3-thumbnail.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/image-product-4-thumbnail.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <button data-component="lightbox-close-button">
+            <img src="assets/icons/icon-close.svg" alt="Lightbox Close">
+          </button>
+        </div>
+      </div>
+      <div data-component="description">
+        <span class="label">
+          SNEAKER COMPANY
+        </span>
+        <h2 class="title">
+          Fall Limited Edition Sneakers
+        </h2>
+        <p class="description">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole,
+          they'll withstand everything the weather can offer.
+        </p>
+        <div class="flex-row-center-normal">
+          <span class="price">
+            $125.00
+          </span>
+          <span data-spacer="x-10"></span>
+          <span class="discount">
+            50%
+          </span>
+        </div>
+        <span data-spacer="y-10"></span>
+        <span class="previous-price">
+          $250.00
+        </span>
+        <div class="buttons-wrapper">
+          <div class="amount-wrapper">
+            <button class="rest-one-button">
+              -
+            </button>
+            <span id="product-quantity">
+              0
+            </span>
+            <button class="add-one-button">
+              +
+            </button>
+          </div>
+          <span data-spacer="x-10"></span>
+          <button class="add-product-button">
+            <img src="assets/icons/icon-cart.svg" alt="Cart">
+            <span>
+              Add to cart
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="scripts/scripts.js"></script>
+</body>
+
+</html>
